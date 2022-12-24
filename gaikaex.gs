@@ -37,10 +37,11 @@ function convertTradeHistory() {
   var span = order / 10 * 5;
   var axis_count = (axis_max-axis_mix) / span + 1;
 
+  //グラフ描画
   createChart(axis_max, axis_mix, axis_count);
 }
 
-
+//グラフ描画
 function createChart(axis_max, axis_mix, axis_count) {
   var spreadsheet = SpreadsheetApp.getActive();
   var sheet = spreadsheet.getActiveSheet();
